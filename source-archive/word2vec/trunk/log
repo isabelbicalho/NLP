@@ -30,3 +30,12 @@ user    53m29.132s
 sys     0m5.668s
 Enter word or sentence (EXIT to break): EXIT
 
+make: Nothing to be done for 'all'.
+Starting training using file text8
+Vocab size: 71291
+Words in train file: 16718843
+Alpha: 0.000002  Progress: 100.10%  Words/thread/sec: 5.53k  
+real    199m28.038s
+user    755m58.816s
+sys     0m36.172s
+Input file not found
