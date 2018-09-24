@@ -1,0 +1,32 @@
+make: Nothing to be done for 'all'.
+--2018-09-24 10:26:08--  http://mattmahoney.net/dc/text8.zip
+Resolvendo mattmahoney.net (mattmahoney.net)... 67.195.197.75
+Conectando-se a mattmahoney.net (mattmahoney.net)|67.195.197.75|:80... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 31344016 (30M) [application/zip]
+Salvando em: “text8.gz”
+
+text8.gz                                                    100%[=========================================================================================================================================>]  29,89M   326KB/s    in 94s     
+
+2018-09-24 10:27:43 (324 KB/s) - “text8.gz” salvo [31344016/31344016]
+
+Starting training using file text8
+Vocab size: 71291
+Words in train file: 16718843
+Alpha: 0.000002  Progress: 100.11%  Words/thread/sec: 10.44k  
+real    108m28.321s
+user    400m20.876s
+sys     0m24.428s
+Enter word or sentence (EXIT to break): EXIT
+
+
+make: Nothing to be done for 'all'.
+Starting training using file text8
+Vocab size: 71291
+Words in train file: 16718843
+Alpha: 0.000005  Progress: 100.10%  Words/thread/sec: 78.20k  
+real    14m6.381s
+user    53m29.132s
+sys     0m5.668s
+Enter word or sentence (EXIT to break): EXIT
+
