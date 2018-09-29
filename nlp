@@ -1,0 +1,110 @@
+syntax
+part of speech tagging
+(partes do dircurso)
+
+cada palavra (token de palavra) recebe um marcador, uma tag --> POS tagging
+a tag depende muito do contexto
+no ingles, a maioria das tags estão descritas no TreeBank, o qual é um subconjunto do Brown (87 x 45 tags)
+importanica das tags:
+- remover ambiguidade
+- detectar frases validas pela gramatica da linguagem
+
+classes fechadas: uma palavra so pode ser associada a uma tag : problema --> poucas palavras caem nesse caso
+classes abertas: a lingua é viva. é aqui que as palavras são inventadas e podem ser associadas a mais de uma tag, gerando ambiguidade.
+
+baseline: associar a tag mais usada ao token : ex -> saw --> verb   ---> o baseline é simples mas a acuracia é alta
+
+tres formas de resolver os problemas de POS tagging:
+- baseado em regras
+  feitos a mao por especialistas da lingua
+  quando acontecer esse padrao esse token vai receber essa tag
+- baseado em aprendizado de maquina
+  treinado com tokens rotulados (TreeBank)
+- baseados em estatística
+  Hidden Markov Model (HMM)
+
+
+problema de rotulagem sequencial
+  dada essa sequencia essa palavra é associada a essa tag (baseado em contexto)
+
+
+
+Redes lSTM representa o estado da arte
+long showrt-term memory networks
+
+
+HMM
+automato finito que muda de estado de acordo com a probabilidade
+modelo gerador. produz dados com a memsa distirbuição treinada
+
+
+---------------------
+
+
+LSTM (arquitetura de rede recorrente)
+iseleciona o que se deve manter e o que nao se deve manter
+normalmente, as coisas novas sao mantidas. quem decide isso é o backpropagation
+
+- vanilla lrn
+entrada atual + saida anterior = concatenação
+
+sigmoid -> a dimensão que terá o valor 0 será esquecida, por exemplo
+
+
+o_t = sigma(Wo[h_t - 1, x_t] + b_o)
+h_t = o_t * tanh(C_t)
+
+
+redes de convolução para textos
+-------------------------------
+
+full connected layer pode causar overfitting por ter muito parametro na classificação da sentença
+nao consegue unir expressões tipo "don't hate" nao forma sequencia de palavras apenas vê quais palavras estão ausentes ou nao
+solução 1:
+    formar n-grams
+    - bag of n-grams
+        - usa layers FC
+        - explosão de parametros. a rede nao aprende nadap ois tem que aprneder muita coisa'
+
+convoluções são para reduzir os parâmetros, pois trabalhamos apenas em uma parte do texto de cada vez 
+evita a explosão de parametros
+convolução aplica filtros (sequencia de palavras de um determinado tamanho especificado)
+o vetor resultante é um vetor de correlações
+filtros são padroes que procuramos no texto
+no texto, a dimensão X é a dimensão do embedding e a dimensão Y contém as palavras diferentes. apenas a dimensão Y é importante.
+usar muitos filtros -> muitos padrões -> vai acabar achando padrões não discriminativos
+max-pooling -> did you see this feature anywhere in the sentence?
+average pooling -> hhow prevalent is the feature in the sentence
+k-max pooling  -> k é um threshold para maxpooling. filtro detectado mais de k vezes
+dynamic pooling -> detectando o filtro mais no começo, meio ou fim da sentença
+
+
+
+----------------------------------------------
+
+vetores de sentença
+classificação de sentença
+- topic
+- sentiment
+- subjectivity / obkectivity
+- etc
+- enron (coleçao de emails rotulados)
+identificaçao de parafrase
+- nao podemos trabalhar com classificação de texto pois a entrada é composta por 2 frases. teremos que comparar e gerar uma saida binaria
+- modelo de rede siamesa
+- corpus pequqeno. poucos exemplos positivos de parafrase mas muitos negativos
+similaridade semantica entre frases
+- o quanto essa frase se parece com a outro de um ponto de vista semantico?
+- rede siamesa LSTM
+entailment (implicações)
+- time de jogadores  de futebol masculino ->> grupo de homens jogando um esporte
+- implicaçao/neutro/contradição
+- model ode rede siamesa
+retrieval
+- busca
+- texto -> imagem; texto -> texto; imagem -> imagem; ...
+- rede siamesam pois ocmpara duas coisas. o bom é que nao precisa ser da mesma familia, ext mapear texto para imagem
+
+
+mean average precision
+area embaixo da curva de precision e recall para todas as queries
