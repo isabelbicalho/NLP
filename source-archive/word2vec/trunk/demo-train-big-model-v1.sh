@@ -95,6 +95,6 @@ gcc word2phrase.c -o word2phrase -lm -pthread -O3 -march=native -funroll-loops
 gcc compute-accuracy.c -o compute-accuracy -lm -pthread -O3 -march=native -funroll-loops
 ./word2phrase -train data.txt -output data-phrase.txt -threshold 200 -debug 2
 ./word2phrase -train data-phrase.txt -output data-phrase2.txt -threshold 100 -debug 2
-./word2vec -train data-phrase2.txt -output vectors.bin -cbow 1 -size 500 -window 10 -negative 10 -hs 0 -sample 1e-5 -threads 40 -binary 1 -iter 3 -min-count 10
-./compute-accuracy vectors.bin 400000 < questions-words.txt     # should get to almost 78% accuracy on 99.7% of questions
+./word2vec -train data-phrase2.txt -output vectors_huge_skip-gram_window8.bin -cbow 0 -size 200 -window 8 -negative 10 -hs 0 -sample 1e-5 -threads 20 -binary 1 -iter 15 -min-count 10
+./compute-accuracy vectors_huge_skip-gram_window8.bin 400000 < questions-words.txt     # should get to almost 78% accuracy on 99.7% of questions
 ./compute-accuracy vectors.bin 1000000 < questions-phrases.txt  # about 78% accuracy with 77% coverage

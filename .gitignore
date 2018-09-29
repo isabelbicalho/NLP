@@ -1,3 +1,4 @@
 *.o
 text8
 *.zip
+venv

@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+%\usepackage[brazil]{babel}   
+\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{\\ Natural Language Processing\\ A study of Language Models using word2vec}
+
+\author{Isabel B. Amaro\inst{1}, Adriano Veloso\inst{2}}
+
+
+\address{Department of Computer Science -- Universidade Federal de Minas Gerais
+  (UFMG)\\
+  Belo Horizonte, Brazil
+  \email{\{isabel.amaro,adrianov\}@dcc.ufmg.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+
+\hspace{6ex} With the appearing of social networks, a massive amount of data is constantly being generated weekly in the last few years (CAMBRIA, 2014). Natural Language Processing is a Computer Science field that studies the best ways to retrieve, process and generate from representations of human language (CAMBRIA, 2014). To
+
+This work analyses 
+
+\section{Language Models}
+
+\section{word2vec}
+
+Word2vec can utilize either of two model architectures to produce a distributed representation of words: continuous bag-of-words (CBOW) or continuous skip-gram. In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words.[1][4] According to the authors' note,[5] CBOW is faster while skip-gram is slower but does a better job for infrequent words.
+
+\section{Continuous Bag-Of-Words (CBOW)}
+
+\section{Skip-Gram}
+
+\section{Result and analysis}
+
+\section{Conclusion}
+
+%\section{References}
+
+%Bibliographic references must be unambiguous and uniform.  We recommend giving
+%the author names references in brackets, e.g. \cite{knuth:84},
+%\cite{boulic:91}, and \cite{smith:99}.
+
+%The references must be listed using 12 point font size, with 6 points of space
+%before each reference. The first line of each reference should not be
+%indented, while the subsequent should be indented by 0.5 cm.
+
+\bibliographystyle{sbc}
+\bibliographystyle{unsrt}
+\bibliography{sbc-template}
+
+\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\bibliography{sample}
+
+\end{document}
