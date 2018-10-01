@@ -163,3 +163,65 @@ real    54m3.139s
 user    213m30.696s
 sys     0m2.860s
 
+
+++ echo '================ vectors_text8M_cbow_window4_size200.bin ==================='
+================ vectors_text8M_cbow_window4_size200.bin ===================
+++ ./word2vec -train text8M -output vectors_text8M_cbow_window4_size200.bin -cbow 1 -size 200 -window 4 -negative 25 -hs 0 -sample 1e-4 -threads 40 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.000005  Progress: 100.35%  Words/thread/sec: 90.99k  
+real    8m24.001s
+user    30m34.908s
+sys     0m4.120s
+++ echo '================ vectors_text8M_cbow_window8_size200.bin ==================='
+================ vectors_text8M_cbow_window8_size200.bin ===================
+++ ./word2vec -train text8M -output vectors_text8M_cbow_window8_size200.bin -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 40 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.000005  Progress: 100.35%  Words/thread/sec: 85.81k  
+real    9m19.878s
+user    32m25.920s
+sys     0m3.896s
+++ echo '================ vectors_text8M_cbow_window16_size200.bin ==================='
+================ vectors_text8M_cbow_window16_size200.bin ===================
+++ ./word2vec -train text8M -output vectors_text8M_cbow_window16_size200.bin -cbow 1 -size 200 -window 16 -negative 25 -hs 0 -sample 1e-4 -threads 40 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.000005  Progress: 100.35%  Words/thread/sec: 83.33k  
+real    9m54.438s
+user    33m27.020s
+sys     0m3.300s
+++ echo '================ vectors_text8M_skip-gram_window4_size200.bin ==================='
+================ vectors_text8M_skip-gram_window4_size200.bin ===================
+++ ./word2vec -train text8M -output vectors_text8M_skip-gram_window4_size200.bin -cbow 0 -size 200 -window 4 -negative 25 -hs 0 -sample 1e-4 -threads 40 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.000002  Progress: 100.37%  Words/thread/sec: 20.29k  
+real    38m53.410s
+user    137m11.888s
+sys     0m7.048s
+++ echo '================ vectors_text8M_skip-gram_window8_size200.bin ==================='
+================ vectors_text8M_skip-gram_window8_size200.bin ===================
+++ ./word2vec -train text8M -output vectors_text8M_skip-gram_window8_size200.bin -cbow 0 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 40 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.000002  Progress: 100.36%  Words/thread/sec: 11.41k  
+real    67m10.189s
+user    243m54.040s
+sys     0m13.172s
+++ echo '================ vectors_text8M_skip-gram_window16_size200.bin ==================='
+================ vectors_text8M_skip-gram_window16_size200.bin ===================
+++ ./word2vec -train text8M -output vectors_text8M_skip-gram_window16_size200.bin -cbow 0 -size 200 -window 16 -negative 25 -hs 0 -sample 1e-4 -threads 40 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.022819  Progress: 8.73%  Words/thread/sec: 6.02k  ^C
+real    10m20.759s
+user    40m15.900s
+sys     0m1.312s
+

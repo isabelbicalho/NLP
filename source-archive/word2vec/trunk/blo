@@ -263,3 +263,51 @@ better_distance = (0.0, 'boy', 'girl', 'father', 'mother', u'mother')
 worst_distance = (0.49, 'read', 'reading', 'see', 'seeing', u'references')
 distancia media = 0.09
 acuracia = 0.43
+
+
+(venv) iamaro@iamaro-421tech ~/Workspace/NLP/source-archive/word2vec/trunk $ python test.py vectors_text8M_cbow_window4_size200.bin
+loading
+loaded
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_cbow_window4_size200.bin
+0.352423411065
+better_distance = (0.0, 'boy', 'girl', 'brothers', 'sisters', u'sisters')
+worst_distance = (0.68, 'vanish', 'vanishing', 'see', 'seeing', u'includes')
+distancia media = 0.07
+acuracia = 0.41
+(venv) iamaro@iamaro-421tech ~/Workspace/NLP/source-archive/word2vec/trunk $ vim blo
+(venv) iamaro@iamaro-421tech ~/Workspace/NLP/source-archive/word2vec/trunk $ python test.py vectors_text8M_cbow_window8_size200.bin
+loading
+loaded
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_cbow_window8_size200.bin
+0.335619570187
+better_distance = (0.0, 'boy', 'girl', 'brother', 'sister', u'sister')
+worst_distance = (0.6, 'read', 'reading', 'see', 'seeing', u'references')
+distancia media = 0.08
+acuracia = 0.43
+(venv) iamaro@iamaro-421tech ~/Workspace/NLP/source-archive/word2vec/trunk $ python test.py vectors_text8M_cbow_window16_size200.bin
+loading
+loaded
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_cbow_window16_size200.bin
+0.29983996342
+better_distance = (0.0, 'boy', 'girl', 'brother', 'sister', u'sister')
+worst_distance = (0.65, 'read', 'reading', 'see', 'seeing', u'references')
+distancia media = 0.09
+acuracia = 0.42
+(venv) iamaro@iamaro-421tech ~/Workspace/NLP/source-archive/word2vec/trunk $ python test.py vectors_text8M_skip-gram_window8_size200.bin
+loading
+loaded
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_skip-gram_window8_size200.bin
+0.251828989483
+better_distance = (0.0, 'boy', 'girl', 'father', 'mother', u'mother')
+worst_distance = (0.49, 'play', 'plays', 'see', 'sees', u'also')
+distancia media = 0.08
+acuracia = 0.43
+
