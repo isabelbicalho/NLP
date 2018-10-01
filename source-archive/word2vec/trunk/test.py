@@ -26,6 +26,7 @@ def plot(vocab, X):
 file = open('questions-words.txt', 'r')
 lines = file.read().splitlines()
 lines = [line for line in lines if not line.startswith(':')]
+import pdb; pdb.set_trace()
 i = 0
 total = 0
 better_distance = (999999.0, None, None, None, None, None)
