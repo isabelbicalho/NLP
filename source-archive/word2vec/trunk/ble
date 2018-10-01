@@ -1,0 +1,433 @@
++ python test.py vectors_text8S_cbow_window4_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8S_cbow_window4_size200.bin
+0.254232804233
+\hline
+&&\[-2ex]
+look & looking & predict & predicting & pinpoint & 0.13\[0.5ex]
+\hline
+&&\[-2ex]
+fast & faster & old & older & later & 0.02\[0.5ex]
+\hline
+&&\[-2ex]
+cold & colder & strong & stronger & stronger & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+play & playing & sit & sitting & sitting & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+shuffle & shuffles & say & says & baptize & 0.13\[0.5ex]
+
+real    0m57.821s
+user    3m15.120s
+sys     0m29.824s
++ python test.py vectors_text8S_cbow_window8_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8S_cbow_window8_size200.bin
+0.242328042328
+\hline
+&&\[-2ex]
+sing & singing & see & seeing & topics & 0.44\[0.5ex]
+\hline
+&&\[-2ex]
+falling & fell & walking & walked & divers & 0.1\[0.5ex]
+\hline
+&&\[-2ex]
+responsible & irresponsible & ethical & unethical & irrational & 0.19\[0.5ex]
+\hline
+&&\[-2ex]
+efficient & inefficient & responsible & irresponsible & alleged & 0.4\[0.5ex]
+\hline
+&&\[-2ex]
+eagle & eagles & building & buildings & buildings & 0.0\[0.5ex]
+
+real    0m57.752s
+user    3m13.976s
+sys     0m29.908s
++ python test.py vectors_text8S_cbow_window16_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8S_cbow_window16_size200.bin
+0.208465608466
+\hline
+&&\[-2ex]
+vanish & vanishes & find & finds & get & 0.11\[0.5ex]
+\hline
+&&\[-2ex]
+slowing & slowed & describing & described & praising & 0.13\[0.5ex]
+\hline
+&&\[-2ex]
+sudden & suddenly & obvious & obviously & asks & 0.12\[0.5ex]
+\hline
+&&\[-2ex]
+brothers & sisters & dad & mom & scrooge & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+running & ran & enhancing & enhanced & instigated & 0.16\[0.5ex]
+
+real    1m4.578s
+user    3m10.824s
+sys     0m43.524s
++ python test.py vectors_text8M_cbow_window4_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_cbow_window4_size200.bin
+0.250529100529
+\hline
+&&\[-2ex]
+enhancing & enhanced & knowing & knew & know & 0.12\[0.5ex]
+\hline
+&&\[-2ex]
+dancing & danced & singing & sang & accompaniment & 0.08\[0.5ex]
+\hline
+&&\[-2ex]
+enhance & enhancing & read & reading & aloud & 0.26\[0.5ex]
+\hline
+&&\[-2ex]
+running & ran & implementing & implemented & cooperating & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+write & writes & search & searches & searching & 0.15\[0.5ex]
+
+real    1m0.632s
+user    3m11.760s
+sys     0m36.000s
++ python test.py vectors_text8M_cbow_window8_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_cbow_window8_size200.bin
+0.24708994709
+\hline
+&&\[-2ex]
+dog & dogs & eye & eyes & retina & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+man & men & cow & cows & tipping & 0.07\[0.5ex]
+\hline
+&&\[-2ex]
+easy & easiest & quick & quickest & toss & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+generating & generated & taking & took & took & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+certain & uncertain & convenient & inconvenient & secure & 0.19\[0.5ex]
+
+real    0m59.706s
+user    3m11.376s
+sys     0m34.908s
++ python test.py vectors_text8M_cbow_window16_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_cbow_window16_size200.bin
+0.205555555556
+\hline
+&&\[-2ex]
+banana & bananas & color & colors & cmyk & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+seeing & saw & knowing & knew & dumb & 0.14\[0.5ex]
+\hline
+&&\[-2ex]
+reading & read & decreasing & decreased & decrease & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+slow & slowing & say & saying & think & 0.1\[0.5ex]
+\hline
+&&\[-2ex]
+jumping & jumped & swimming & swam & stables & 0.27\[0.5ex]
+
+real    1m1.062s
+user    3m9.808s
+sys     0m37.708s
++ python test.py vectors_text8_cbow_window4_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8_cbow_window4_size200.bin
+0.415682062299
+\hline
+&&\[-2ex]
+see & sees & describe & describes & confesses & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+he & she & father & mother & mother & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+heavy & heavier & great & greater & bigger & 0.01\[0.5ex]
+\hline
+&&\[-2ex]
+invent & inventing & dance & dancing & dancing & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+dream & dreams & building & buildings & buildings & 0.0\[0.5ex]
+
+real    1m55.233s
+user    6m28.036s
+sys     0m51.120s
++ python test.py vectors_text8_cbow_window8_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8_cbow_window8_size200.bin
+0.414930182599
+\hline
+&&\[-2ex]
+ethical & unethical & possibly & impossibly & likely & 0.21\[0.5ex]
+\hline
+&&\[-2ex]
+fast & faster & smart & smarter & better & 0.04\[0.5ex]
+\hline
+&&\[-2ex]
+knowing & knew & feeding & fed & feeders & 0.11\[0.5ex]
+\hline
+&&\[-2ex]
+serious & seriously & fortunate & fortunately & pleased & 0.17\[0.5ex]
+\hline
+&&\[-2ex]
+sit & sitting & decrease & decreasing & increase & 0.11\[0.5ex]
+
+real    2m3.356s
+user    6m17.788s
+sys     1m7.656s
++ python test.py vectors_text8_cbow_window16_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8_cbow_window16_size200.bin
+0.370461868958
+\hline
+&&\[-2ex]
+safe & safer & old & older & older & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+man & woman & his & her & her & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+debug & debugging & go & going & you & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+move & moving & fly & flying & flying & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+cheap & cheaper & high & higher & higher & 0.0\[0.5ex]
+
+real    2m7.447s
+user    6m19.752s
+sys     1m16.032s
++ python test.py vectors_text8S_skip-gram_window4_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8S_skip-gram_window4_size200.bin
+0.162037037037
+\hline
+&&\[-2ex]
+sleeping & slept & spending & spent & embark & 0.22\[0.5ex]
+\hline
+&&\[-2ex]
+invent & inventing & swim & swimming & reruns & 0.26\[0.5ex]
+\hline
+&&\[-2ex]
+immediate & immediately & rare & rarely & only & 0.22\[0.5ex]
+\hline
+&&\[-2ex]
+increase & increases & shuffle & shuffles & ickey & 0.04\[0.5ex]
+\hline
+&&\[-2ex]
+king & queen & prince & princess & elizabeth & 0.06\[0.5ex]
+
+real    1m6.962s
+user    3m8.452s
+sys     0m48.520s
++ python test.py vectors_text8S_skip-gram_window8_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8S_skip-gram_window8_size200.bin
+0.16746031746
+\hline
+&&\[-2ex]
+swift & swiftly & slow & slowly & expel & 0.05\[0.5ex]
+\hline
+&&\[-2ex]
+sitting & sat & taking & took & take & 0.11\[0.5ex]
+\hline
+&&\[-2ex]
+large & larger & warm & warmer & drier & 0.02\[0.5ex]
+\hline
+&&\[-2ex]
+think & thinks & go & goes & offending & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+young & youngest & cold & coldest & hotter & 0.07\[0.5ex]
+
+real    1m2.009s
+user    3m11.152s
+sys     0m38.456s
++ python test.py vectors_text8S_skip-gram_window16_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8S_skip-gram_window16_size200.bin
+0.164285714286
+\hline
+&&\[-2ex]
+strong & stronger & high & higher & higher & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+fly & flying & enhance & enhancing & quinine & 0.05\[0.5ex]
+\hline
+&&\[-2ex]
+high & higher & hot & hotter & cooler & 0.14\[0.5ex]
+\hline
+&&\[-2ex]
+hiding & hid & reading & read & further & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+low & lower & large & larger & smaller & 0.02\[0.5ex]
+
+real    1m0.522s
+user    3m12.112s
+sys     0m35.732s
++ python test.py vectors_text8M_skip-gram_window4_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_skip-gram_window4_size200.bin
+0.163227513228
+\hline
+&&\[-2ex]
+slow & slower & deep & deeper & narrower & 0.17\[0.5ex]
+\hline
+&&\[-2ex]
+father & mother & brother & sister & daughter & 0.05\[0.5ex]
+\hline
+&&\[-2ex]
+long & longer & big & bigger & dipper & 0.09\[0.5ex]
+\hline
+&&\[-2ex]
+honest & dishonest & reasonable & unreasonable & conclusive & 0.11\[0.5ex]
+\hline
+&&\[-2ex]
+short & shorter & big & bigger & dipper & 0.09\[0.5ex]
+
+real    0m59.146s
+user    3m10.884s
+sys     0m33.812s
++ python test.py vectors_text8M_skip-gram_window8_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_skip-gram_window8_size200.bin
+0.163888888889
+\hline
+&&\[-2ex]
+dance & dancing & increase & increasing & increased & 0.06\[0.5ex]
+\hline
+&&\[-2ex]
+taking & took & generating & generated & powering & 0.07\[0.5ex]
+\hline
+&&\[-2ex]
+grandson & granddaughter & husband & wife & her & 0.08\[0.5ex]
+\hline
+&&\[-2ex]
+looking & looked & seeing & saw & had & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+new & newer & loud & louder & euphoniums & 0.09\[0.5ex]
+
+real    0m58.998s
+user    3m10.288s
+sys     0m33.452s
++ python test.py vectors_text8M_skip-gram_window16_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_skip-gram_window16_size200.bin
+0.167857142857
+\hline
+&&\[-2ex]
+vanishing & vanished & feeding & fed & plankton & 0.26\[0.5ex]
+\hline
+&&\[-2ex]
+bird & birds & horse & horses & horses & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+think & thinks & sing & sings & yell & 0.08\[0.5ex]
+\hline
+&&\[-2ex]
+banana & bananas & snake & snakes & fauna & 0.12\[0.5ex]
+\hline
+&&\[-2ex]
+talk & talks & write & writes & read & 0.27\[0.5ex]
+
+real    1m2.847s
+user    3m10.092s
+sys     0m41.120s
++ python test.py vectors_text8_skip-gram_window4_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8_skip-gram_window4_size200.bin
+0.322019334049
+\hline
+&&\[-2ex]
+bright & brightest & cool & coolest & temperate & 0.11\[0.5ex]
+\hline
+&&\[-2ex]
+safe & safely & usual & usually & possibly & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+rat & rats & bottle & bottles & styrofoam & 0.04\[0.5ex]
+\hline
+&&\[-2ex]
+color & colors & mouse & mice & mickey & 0.03\[0.5ex]
+\hline
+&&\[-2ex]
+predicting & predicted & jumping & jumped & protanomaly & 0.21\[0.5ex]
+
+real    2m8.765s
+user    6m15.608s
+sys     1m23.892s
++ python test.py vectors_text8_skip-gram_window8_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8_skip-gram_window8_size200.bin
+0.320515574651
+\hline
+&&\[-2ex]
+slow & slowest & strong & strongest & strongest & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+building & buildings & melon & melons & marbled & 0.15\[0.5ex]
+\hline
+&&\[-2ex]
+simple & simplest & weak & weakest & strong & 0.12\[0.5ex]
+\hline
+&&\[-2ex]
+scream & screams & decrease & decreases & increase & 0.06\[0.5ex]
+\hline
+&&\[-2ex]
+tall & taller & slow & slower & faster & 0.0\[0.5ex]
+
+real    2m7.714s
+user    6m18.456s
+sys     1m18.428s
++ python test.py vectors_text8_skip-gram_window16_size200.bin
+/home/iamaro/Workspace/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8_skip-gram_window16_size200.bin
+0.305477980666
+\hline
+&&\[-2ex]
+sure & unsure & rational & irrational & irrational & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+weak & weaker & old & older & forty & 0.04\[0.5ex]
+\hline
+&&\[-2ex]
+pear & pears & lion & lions & feuchtwanger & 0.16\[0.5ex]
+\hline
+&&\[-2ex]
+good & better & deep & deeper & deeper & 0.0\[0.5ex]
+\hline
+&&\[-2ex]
+informed & uninformed & fortunate & unfortunate & byword & 0.08\[0.5ex]
+
+real    2m23.128s
+user    6m6.776s
+sys     1m59.552s
+

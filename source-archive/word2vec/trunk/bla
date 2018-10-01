@@ -1,0 +1,145 @@
+(venv) iamaro@iamaro-421tech ~/Workspace/NLP/source-archive/word2vec/trunk $ ./run_test.sh 
++ python test.py vectors_text8S_cbow_window4_size200.bin
+vectors_text8S_cbow_window4_size200.bin
+0.254232804233
+[('decrease', 'decreasing', 'fly', 'flying', u'flies', 0.030081212520599365), ('thinking', 'thought', 'sitting', 'sat', u'said', 0.23147514462471008), ('slow', 'slower', 'hard', 'harder', u'harder', 0.0), ('young', 'youngest', 'bad', 'worst', u'biggest', 0.06141313910484314), ('efficient', 'efficiently', 'quiet', 'quietly', u'impulsive', 0.23337523639202118)]
+
+real    0m58.205s
+user    3m15.820s
+sys     0m30.112s
++ python test.py vectors_text8S_cbow_window8_size200.bin
+vectors_text8S_cbow_window8_size200.bin
+0.242328042328
+[('describe', 'describes', 'see', 'sees', u'references', 0.24921712279319763), ('rat', 'rats', 'dog', 'dogs', u'hound', 0.006283432245254517), ('slow', 'slows', 'see', 'sees', u'disambiguation', 0.3781970739364624), ('saying', 'said', 'seeing', 'saw', u'actaeon', 0.1465197056531906), ('walk', 'walking', 'describe', 'describing', u'refers', 0.11773654818534851)]
+
+real    0m56.385s
+user    3m13.608s
+sys     0m26.732s
++ python test.py vectors_text8S_cbow_window16_size200.bin
+vectors_text8S_cbow_window16_size200.bin
+0.208465608466
+[('brothers', 'sisters', 'prince', 'princess', u'consort', 0.06392908096313477), ('slow', 'slower', 'cold', 'colder', u'cooler', 0.03491276502609253), ('bird', 'birds', 'snake', 'snakes', u'reptiles', 0.08155122399330139), ('write', 'writes', 'sing', 'sings', u'sings', 0.0), ('strong', 'stronger', 'hot', 'hotter', u'cooler', 0.08097007870674133)]
+
+real    0m55.924s
+user    3m13.484s
+sys     0m25.796s
++ python test.py vectors_text8M_cbow_window4_size200.bin
+vectors_text8M_cbow_window4_size200.bin
+0.250529100529
+[('generate', 'generates', 'work', 'works', u'works', 0.0), ('simple', 'simpler', 'loud', 'louder', u'louder', 0.0), ('complete', 'completely', 'quick', 'quickly', u'arrestor', 0.02559494972229004), ('see', 'sees', 'play', 'plays', u'rosalyn', 0.023635804653167725), ('unfortunate', 'unfortunately', 'professional', 'professionally', u'personnel', 0.10757584869861603)]
+
+real    0m55.991s
+user    3m14.200s
+sys     0m25.248s
++ python test.py vectors_text8M_cbow_window8_size200.bin
+vectors_text8M_cbow_window8_size200.bin
+0.24708994709
+[('building', 'buildings', 'finger', 'fingers', u'fingers', 0.0), ('discover', 'discovering', 'write', 'writing', u'written', 0.09960320591926575), ('fortunate', 'unfortunate', 'known', 'unknown', u'called', 0.18369489908218384), ('machine', 'machines', 'goat', 'goats', u'goats', 0.0), ('predict', 'predicting', 'invent', 'inventing', u'cried', 0.26599280536174774)]
+
+real    0m55.982s
+user    3m14.092s
+sys     0m25.352s
++ python test.py vectors_text8M_cbow_window16_size200.bin
+vectors_text8M_cbow_window16_size200.bin
+0.205555555556
+[('work', 'works', 'enhance', 'enhances', u'addictive', 0.08407202363014221), ('young', 'younger', 'slow', 'slower', u'slower', 0.0), ('child', 'children', 'rat', 'rats', u'rattus', 0.08797034621238708), ('warm', 'warmest', 'slow', 'slowest', u'progression', 0.17115458846092224), ('strong', 'stronger', 'big', 'bigger', u'workbench', 0.03475579619407654)]
+
+real    0m56.202s
+user    3m14.536s
+sys     0m25.460s
++ python test.py vectors_text8_cbow_window4_size200.bin
+vectors_text8_cbow_window4_size200.bin
+0.415682062299
+[('warm', 'warmest', 'weak', 'weakest', u'wettest', 0.1059817522764206), ('occasional', 'occasionally', 'rapid', 'rapidly', u'slow', 0.03153666853904724), ('woman', 'women', 'man', 'men', u'men', 0.0), ('cow', 'cows', 'road', 'roads', u'roads', 0.0), ('moving', 'moved', 'singing', 'sang', u'sang', 0.0)]
+
+real    1m50.007s
+user    6m31.900s
+sys     0m39.764s
++ python test.py vectors_text8_cbow_window8_size200.bin
+vectors_text8_cbow_window8_size200.bin
+0.414930182599
+[('nephew', 'niece', 'prince', 'princess', u'princess', 0.0), ('work', 'works', 'slow', 'slows', u'fast', 0.005597561597824097), ('work', 'works', 'walk', 'walks', u'snipe', 0.07232514023780823), ('spending', 'spent', 'moving', 'moved', u'moved', 0.0), ('cool', 'coolest', 'simple', 'simplest', u'simplest', 0.0)]
+
+real    1m50.805s
+user    6m33.944s
+sys     0m40.928s
++ python test.py vectors_text8_cbow_window16_size200.bin
+vectors_text8_cbow_window16_size200.bin
+0.370461868958
+[('implement', 'implementing', 'sit', 'sitting', u'sitting', 0.0), ('scream', 'screaming', 'look', 'looking', u'looking', 0.0), ('hot', 'hottest', 'small', 'smallest', u'large', 0.22256821393966675), ('fortunate', 'unfortunate', 'reasonable', 'unreasonable', u'undesirable', 0.18606866896152496), ('lucky', 'luckiest', 'quick', 'quickest', u'restarted', 0.1576966643333435)]
+
+real    1m51.594s
+user    6m31.668s
+sys     0m43.764s
++ python test.py vectors_text8S_skip-gram_window4_size200.bin
+vectors_text8S_skip-gram_window4_size200.bin
+0.162037037037
+[('walk', 'walks', 'search', 'searches', u'grattan', 0.05331134796142578), ('dance', 'dancing', 'sit', 'sitting', u'kneel', 0.09571066498756409), ('paying', 'paid', 'slowing', 'slowed', u'antiprotons', 0.08306333422660828), ('think', 'thinking', 'enhance', 'enhancing', u'irritability', 0.05398869514465332), ('precise', 'precisely', 'quiet', 'quietly', u'joked', 0.18029341101646423)]
+
+real    0m55.752s
+user    3m13.456s
+sys     0m24.996s
++ python test.py vectors_text8S_skip-gram_window8_size200.bin
+vectors_text8S_skip-gram_window8_size200.bin
+0.16746031746
+[('child', 'children', 'dream', 'dreams', u'androids', 0.15293648838996887), ('pleasant', 'unpleasant', 'sure', 'unsure', u'puzzled', 0.2721821963787079), ('safe', 'safer', 'great', 'greater', u'sandow', 0.16682368516921997), ('walking', 'walked', 'reading', 'read', u'further', 0.10182547569274902), ('selling', 'sold', 'shrinking', 'shrank', u'cancelling', 0.1604960858821869)]
+
+real    0m57.306s
+user    3m15.024s
+sys     0m27.648s
++ python test.py vectors_text8S_skip-gram_window16_size200.bin
+vectors_text8S_skip-gram_window16_size200.bin
+0.164285714286
+[('jumping', 'jumped', 'slowing', 'slowed', u'pointing', 0.1540590524673462), ('reasonable', 'unreasonable', 'decided', 'undecided', u'refused', 0.34723375737667084), ('safe', 'safer', 'loud', 'louder', u'chorus', 0.039905041456222534), ('search', 'searches', 'estimate', 'estimates', u'uninhabitable', 0.049375563859939575), ('weak', 'weaker', 'short', 'shorter', u'long', 0.006799817085266113)]
+
+real    0m56.520s
+user    3m14.396s
+sys     0m26.748s
++ python test.py vectors_text8M_skip-gram_window4_size200.bin
+vectors_text8M_skip-gram_window4_size200.bin
+0.163227513228
+[('falling', 'fell', 'enhancing', 'enhanced', u'reactivation', 0.09988278150558472), ('efficient', 'inefficient', 'possible', 'impossible', u'intimidating', 0.16296550631523132), ('long', 'longer', 'sharp', 'sharper', u'viscous', 0.19028866291046143), ('paying', 'paid', 'walking', 'walked', u'fringe', 0.09374922513961792), ('most', 'mostly', 'serious', 'seriously', u'exacerbated', 0.13983625173568726)]
+
+real    0m57.538s
+user    3m14.816s
+sys     0m28.328s
++ python test.py vectors_text8M_skip-gram_window8_size200.bin
+vectors_text8M_skip-gram_window8_size200.bin
+0.163888888889
+[('snake', 'snakes', 'elephant', 'elephants', u'lizards', 0.16404971480369568), ('singing', 'sang', 'moving', 'moved', u'plugging', 0.14587348699569702), ('sure', 'unsure', 'efficient', 'inefficient', u'intractable', 0.1865108460187912), ('sleeping', 'slept', 'slowing', 'slowed', u'deceleration', 0.19929707050323486), ('rat', 'rats', 'onion', 'onions', u'garlic', 0.020999997854232788)]
+
+real    0m55.957s
+user    3m13.564s
+sys     0m25.368s
++ python test.py vectors_text8M_skip-gram_window16_size200.bin
+vectors_text8M_skip-gram_window16_size200.bin
+0.167857142857
+[('sure', 'unsure', 'ethical', 'unethical', u'ethics', 0.2610750049352646), ('think', 'thinking', 'increase', 'increasing', u'increasing', 0.0), ('thinking', 'thought', 'taking', 'took', u'taken', 0.19927102327346802), ('happy', 'happily', 'fortunate', 'fortunately', u'plectrude', 0.16494476795196533), ('king', 'queen', 'husband', 'wife', u'her', 0.15606170892715454)]
+
+real    0m56.415s
+user    3m14.292s
+sys     0m26.208s
++ python test.py vectors_text8_skip-gram_window4_size200.bin
+vectors_text8_skip-gram_window4_size200.bin
+0.322019334049
+[('swift', 'swiftly', 'cheerful', 'cheerfully', u'telepathic', 0.10379689931869507), ('eagle', 'eagles', 'pineapple', 'pineapples', u'raisins', 0.03162318468093872), ('taking', 'took', 'decreasing', 'decreased', u'increasing', 0.12471050024032593), ('furious', 'furiously', 'amazing', 'amazingly', u'hallowed', 0.27088093757629395), ('go', 'going', 'think', 'thinking', u'thinking', 0.0)]
+
+real    1m51.924s
+user    6m32.412s
+sys     0m44.036s
++ python test.py vectors_text8_skip-gram_window8_size200.bin
+vectors_text8_skip-gram_window8_size200.bin
+0.320515574651
+[('strong', 'stronger', 'bright', 'brighter', u'brighter', 0.0), ('usual', 'usually', 'infrequent', 'infrequently', u'often', 0.0643656849861145), ('banana', 'bananas', 'eye', 'eyes', u'cornea', 0.08508798480033875), ('predicting', 'predicted', 'vanishing', 'vanished', u'preregular', 0.24519501626491547), ('vanish', 'vanishes', 'sit', 'sits', u'sitis', 0.0682879090309143)]
+
+real    1m51.451s
+user    6m32.988s
+sys     0m43.640s
++ python test.py vectors_text8_skip-gram_window16_size200.bin
+vectors_text8_skip-gram_window16_size200.bin
+0.305477980666
+[('cold', 'colder', 'safe', 'safer', u'risk', 0.005632281303405762), ('old', 'oldest', 'fast', 'fastest', u'fastest', 0.0), ('singing', 'sang', 'screaming', 'screamed', u'trenchcoat', 0.1211429238319397), ('playing', 'played', 'shrinking', 'shrank', u'scrapping', 0.22236484289169312), ('hard', 'harder', 'tough', 'tougher', u'creditable', 0.03297737240791321)]
+
+real    1m51.435s
+user    6m33.860s
+sys     0m43.356s
