@@ -246,3 +246,20 @@ better_distance = (0.0, 'boy', 'girl', 'brothers', 'sisters', u'sisters')
 worst_distance = (0.68, 'vanish', 'vanishing', 'see', 'seeing', u'includes')
 distancia media = 0.07
 acuracia = 0.41
+
+
+
+(venv) iamaro@juggernaut:~/bel/NLP/source-archive/word2vec/trunk$ ./word2vec -train text8M -output vectors_text8M_skip-gram_window16_size200.bin -cbow 0 -size 200 -window 16 -negative 25 -hs 0 -sample 1e-4 -threads 80 -binary 1 -iter 15
+Starting training using file text8M
+Vocab size: 57014
+Words in train file: 11096028
+Alpha: 0.000002  Progress: 100.67%  Words/thread/sec: 3.33k  (venvpython test.py vectors_text8M_skip-gram_window16_size200.binloading
+loaded
+/home/iamaro/bel/NLP/source-archive/word2vec/trunk/venv/local/lib/python2.7/site-packages/gensim/matutils.py:737: FutureWarning: Conversion of the second argument of issubdtype from `int` to `np.signedinteger` is deprecated. In future, it will be treated as `np.int64 == np.dtype(int).type`.
+  if np.issubdtype(vec.dtype, np.int):
+vectors_text8M_skip-gram_window16_size200.bin
+0.249428440786
+better_distance = (0.0, 'boy', 'girl', 'father', 'mother', u'mother')
+worst_distance = (0.49, 'read', 'reading', 'see', 'seeing', u'references')
+distancia media = 0.09
+acuracia = 0.43
