@@ -108,3 +108,119 @@ retrieval
 
 mean average precision
 area embaixo da curva de precision e recall para todas as queries
+
+
+==================================================
+
+Pandas (forget SQL and Excel)
+
+a = pd.read_csv(...)
+a.drop(column, axis=1)
+a = pode ser trabalhado como um dicionario
+a['description'].str.lower() 
+
+tokenize com nltk (usar expressao regular) a-zA-Z0-9
+stemming (porter stemming)
+
+gensim
+word2vec similar_by_vector
+
+scikit=learn
+kfold
+
+tf-idf (bag of words treinado) extração de caracteristicas
+vectorizer = sklearn,feat_extrac.text.tdidf()
+vectorize.transform(input_X)
+vectorizer.fit(train) 
+
+!tar cvfz JazzWithLSTM.tar.gz *
+
+
+word2vec_model = gensim.load(glove)
+word2ec_model.similar_by_vector('brazil')
+
+entrada -> word2vec(keras:embedding)
+model = keras.models.Sequential()
+model.add(keras.layers.LSTM(300,return_sequences=True))
+model.add(keras.layers.LSTM(300,return_sequences=True))
+model.add(keras.layers.Dense(150, activation='relu'))
+model.add(keras.layers.Dropout(0.5)) # Regularizador
+model.add(keras.layers.Dense(50, activation='relu'))
+model.add(keras.layers.Dropout(0.5)) # Regularizador. Pesos podem ficar muito grandes
+model.add(keras.layers.Dense(1, activation='sigmoid'))
+model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+model.fit(trainX, trainY, epochs=300, batch_size=32, validation_data = (devX,devY), callbacks=[keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0.0001, patience=10, verbose=0, mode='min')])
+model.predict(testX, testY)
+
+PyTorch
+
+
+========================
+
+08/10/2018
+Modelos conversasionais
+- conversa seguida de ação - ex: reservar voo
+
+Parsing semântico: tradução de linguagem natural para linguagem formal. ex: linguagem  para linguagem SQL
+sentence -> semantic parser -> executor -> response
+
+tecnica de extração da menos informação que tecnica de sumarização
+parsing semantico da maior quantidade de informação
+
+formas:
+- pegar texto e gerar sql ou qualquer texto que possa ser gerado sem ambiguidade por uma maquina
+
+datasets:
+- generating executalbe representation
+- understanding in a situated environment
+- generalizing to broad domains - fazer pergunta para a maquina e a maquina deve deduzir. realizar algum tipo de conta
+- sequential language understanding - diálogo. ex: reservar voo. a maquina vai executando SQL e mantendo contato com o usuário
+
+executable representations
+- ATIS
+-- mapeia NL para um banco de dados. ~5k exemplos
+- CoNaLa
+-- pseudo codigo para python
+-- pares QA do stackoverflow
+- django
+- NL2Bash
+- CONCODE
+
+understanding in a situated environment
+- Texto para comandar uma maquina. comandos, instruções
+-- Robótica  (3 passos para frente, vire a direita)
+-- Realidade virtual
+
+generalizing to broad domains
+- WikiTableQuestions
+- Mais simples. não é um SQL completo. mas tratando apenas uma tablea a acurácia é alta
+
+sequential laguagem understanding
+- ATIS
+- SCONE
+
+
+13/10/2018 -- parsing semantico geraçao de codigo
+-- semantic parsing ofr programmers
+-- inexpensive datasets not requiring annotation
+-- full expenssivity not limited by logical forms
+-- IDEs mais inteligentes baseadas em linguagem natural
+-- natural language code retrieval : ex: commits, documentaçao, stackoverflow
+
+directly generating source code:
+-- linha acertada
+-- metodo acertado
+-- classe inteira acertada (mais dificil)
+
+Estado da arte
+-- component -wise bi-LSTM
+-- attention: pondera o que realmente é importante no processo de tradução. é uma camada da LSTM
+-- ao gerar o godigo, ela obedece a gramatica. nao produz codigo sem obedecer a gramatica. a gramatica de programaçao deve ser estabelecida
+
+* o texto gerado fica nos nós folha
+
+metricas de avaliação:
+-- casamento exato (exact match): o texto que a maquina produziu é o mesmo da maquina de referencia
+-- pertial credit using BLEU score: o quao proximo o texto produzido é do texto de referencia
+-- F1 score on AST notes
+-- unit tests
